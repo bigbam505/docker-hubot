@@ -1,2 +1,9 @@
 hubot:
   build: .
+  command: bin/hubot --adapter slack
+  environment:
+    - HUBOT_SLACK_TOKEN
+    - HUBOT_SLACK_TEAM
+    - HUBOT_SLACK_BOTNAME=hubot
+  ports:
+    - "8080:8080"

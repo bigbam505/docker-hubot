@@ -5,5 +5,3 @@ WORKDIR /hubot
 
 RUN npm install
 
-RUN ls
-
